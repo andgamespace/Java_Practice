@@ -1,10 +1,12 @@
 {
     "jdk.java.imports.groups": [
-
         "java",
         "javax",
         "org",
         "com",
         ""
+    ],
+    "java.project.referencedLibraries": [
+        "/Users/anshc/Documents/java/javafx-sdk-23.0.1/lib/*.jar"
     ]
 }
