@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -11,8 +12,28 @@
         <option name="gradleJvm" value="#JAVA_HOME" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc" name="buildSrc">
+                <projects>
+                  <project path="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$/gradle_javafx_practice02" />
         <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gradle_javafx_practice02" />
+            <option value="$PROJECT_DIR$/gradle_javafx_practice02/app" />
+            <option value="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc" />
+            <option value="$PROJECT_DIR$/gradle_javafx_practice02/list" />
+            <option value="$PROJECT_DIR$/gradle_javafx_practice02/utilities" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
