@@ -4,64 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db66094a-9094-4c01-8865-eb746354b2ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/app/src/main/java/org/example/app/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/app/src/main/java/org/example/app/MessageUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/app/src/test/java/org/example/app/MessageUtilsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/src/main/kotlin/buildlogic.java-application-conventions.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/src/main/kotlin/buildlogic.java-common-conventions.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/buildSrc/src/main/kotlin/buildlogic.java-library-conventions.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/list/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/list/src/main/java/org/example/list/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/list/src/test/java/org/example/list/LinkedListTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/utilities/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/utilities/src/main/java/org/example/utilities/JoinUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/utilities/src/main/java/org/example/utilities/SplitUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice01/utilities/src/main/java/org/example/utilities/StringUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/app/src/main/java/org/example/app/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/app/src/main/java/org/example/app/MessageUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/app/src/test/java/org/example/app/MessageUtilsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc/.kotlin/errors/errors-1738277081764.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc/src/main/kotlin/buildlogic.java-application-conventions.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc/src/main/kotlin/buildlogic.java-common-conventions.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/buildSrc/src/main/kotlin/buildlogic.java-library-conventions.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/list/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/list/src/main/java/org/example/list/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/list/src/test/java/org/example/list/LinkedListTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/utilities/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/utilities/src/main/java/org/example/utilities/JoinUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/utilities/src/main/java/org/example/utilities/SplitUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle_javafx_practice02/utilities/src/main/java/org/example/utilities/StringUtils.java" beforeDir="false" />
-    </list>
+    <list default="true" id="db66094a-9094-4c01-8865-eb746354b2ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +72,7 @@
       <updated>1738008322405</updated>
       <workItem from="1738706573666" duration="306000" />
       <workItem from="1738707317972" duration="2505000" />
-      <workItem from="1738975694797" duration="157000" />
+      <workItem from="1738975694797" duration="344000" />
     </task>
     <servers />
   </component>
