@@ -28,6 +28,7 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/gradle_javafx_practice01" />
         <option name="gradleJvm" value="#JAVA_HOME" />
       </GradleProjectSettings>
