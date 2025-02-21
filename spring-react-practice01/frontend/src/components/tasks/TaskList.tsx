@@ -1,10 +1,11 @@
+// src/components/TaskList.tsx
 import React, { useEffect } from 'react';
 import {
     Box,
     Typography,
     CircularProgress,
     Alert,
-    Paper
+    Paper,
 } from '@mui/material';
 import { useTaskStore } from '../store/taskStore';
 import TaskItem from './TaskItem';
@@ -25,18 +26,24 @@ const TaskList: React.FC = () => {
     }
 
     if (error) {
-        return (
-            <Alert severity="error">{error}</Alert>
-        );
+        return <Alert severity="error">{error}</Alert>;
     }
 
     return (
-        <Paper elevation={2} sx={{ p: 2 }}>
+        <Paper
+            elevation={3}
+            sx={{
+                p: 2,
+                backgroundColor: 'grey.900',
+                color: 'white',
+                borderRadius: 2,
+            }}
+        >
             <Typography variant="h4" gutterBottom>
                 Todo List
             </Typography>
             {tasks.length === 0 ? (
-                <Typography color="textSecondary">
+                <Typography color="grey.500">
                     No tasks yet. Add your first task!
                 </Typography>
             ) : (

@@ -1,60 +1,68 @@
-import { create } from 'zustand';
+// src/store/taskStore.ts
+import create from 'zustand';
 import { Task, TaskFormData } from '../types/types';
-import axios from 'axios';
+import { taskApi } from '../api/taskApi';
 
-interface TaskState {
+interface TaskStore {
     tasks: Task[];
     isLoading: boolean;
     error: string | null;
     fetchTasks: () => Promise<void>;
-    addTask: (task: TaskFormData) => Promise<void>;
-    updateTask: (id: string, task: TaskFormData) => Promise<void>;
+    createTask: (taskData: TaskFormData) => Promise<void>;
+    updateTask: (id: string, taskData: TaskFormData) => Promise<void>;
     deleteTask: (id: string) => Promise<void>;
 }
 
-export const useTaskStore = create<TaskState>((set) => ({
+export const useTaskStore = create<TaskStore>((set) => ({
     tasks: [],
     isLoading: false,
     error: null,
-
     fetchTasks: async () => {
-        set({ isLoading: true });
+        set({ isLoading: true, error: null });
         try {
-            const response = await axios.get<Task[]>('/api/tasks');
-            set({ tasks: response.data, error: null, isLoading: false });
-        } catch (error) {
-            set({ error: 'Failed to fetch tasks', isLoading: false });
+            const data = await taskApi.getTasks();
+            set({ tasks: data });
+        } catch (error: any) {
+            set({ error: error.message || 'Failed to fetch tasks' });
+        } finally {
+            set({ isLoading: false });
         }
     },
-
-    addTask: async (task: TaskFormData) => {
+    createTask: async (taskData) => {
+        set({ isLoading: true, error: null });
         try {
-            const response = await axios.post<Task>('/api/tasks', task);
-            set((state) => ({ tasks: [...state.tasks, response.data] }));
-        } catch (error) {
-            set({ error: 'Failed to add task' });
+            await taskApi.createTask(taskData);
+            // Re-fetch tasks after creation
+            const data = await taskApi.getTasks();
+            set({ tasks: data });
+        } catch (error: any) {
+            set({ error: error.message || 'Failed to create task' });
+        } finally {
+            set({ isLoading: false });
         }
     },
-
-    updateTask: async (id: string, task: TaskFormData) => {
+    updateTask: async (id, taskData) => {
+        set({ isLoading: true, error: null });
         try {
-            const response = await axios.put<Task>(`/api/tasks/${id}`, task);
-            set((state) => ({
-                tasks: state.tasks.map((t) => (t.id === id ? response.data : t))
-            }));
-        } catch (error) {
-            set({ error: 'Failed to update task' });
+            await taskApi.updateTask(id, taskData);
+            const data = await taskApi.getTasks();
+            set({ tasks: data });
+        } catch (error: any) {
+            set({ error: error.message || 'Failed to update task' });
+        } finally {
+            set({ isLoading: false });
         }
     },
-
-    deleteTask: async (id: string) => {
+    deleteTask: async (id) => {
+        set({ isLoading: true, error: null });
         try {
-            await axios.delete(`/api/tasks/${id}`);
-            set((state) => ({
-                tasks: state.tasks.filter((t) => t.id !== id)
-            }));
-        } catch (error) {
-            set({ error: 'Failed to delete task' });
+            await taskApi.deleteTask(id);
+            const data = await taskApi.getTasks();
+            set({ tasks: data });
+        } catch (error: any) {
+            set({ error: error.message || 'Failed to delete task' });
+        } finally {
+            set({ isLoading: false });
         }
-    }
+    },
 }));
